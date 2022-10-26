@@ -1,0 +1,52 @@
+form{
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+.infos{
+    text-align: left;
+    margin: 20px 0px;
+}
+
+.titulo{
+    margin-bottom: 15px;
+    font-style: bold;
+    font-size: 20px;
+}
+
+p{
+    margin-bottom: 5px;
+}
+
+input{
+    margin-bottom: 18px;
+    width: 60px;
+}
+
+.input-calculos{
+    display: block;
+    margin: 5px 0 5px;
+    padding: 5px 10px;
+    width: 30%;
+}
+
+.botao{
+    width: 40%;
+    text-align: center;
+    padding: 15px 0;
+    background-color: rgb(69, 212, 69);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.botao:hover{
+    background-color: greenyellow;
+    transform: scale(1.1);
+    transition: 1s all;
+}

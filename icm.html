@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <meta charset="UTF-8">
+		<head>
+            <link rel="stylesheet" href="reset.css">
+            <link rel="stylesheet" href="cabecalho.css">
+            <link rel="stylesheet" href="style.css">
+			<title>Cálculo de IMC</title>
+		</head>
+		<body>
+            <!--inicio do cabeçalho, tudo está na tag "header"-->
+            <header>
+                <div class="caixa">
+                    <h1>- Calculo de IMC -</h1>
+                    <div class="opcoes">
+                        <nav>
+                            <ul>
+                                <li><a href="home.html">Home</a></li>
+                                <li><a href="icm.html">Calcule seu IMC</a></li>
+                                <li><a href="contato.html">Contato</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <!--fim do cabeçalho-->
+            <form>
+                <div class="infos">
+                    <div class="titulo">
+                        <h1>Calculo de IMC</h1>
+                    </div>
+                    <p><label for="campo1">Insira seu nome:</label></p>
+                    <input type="text" id="campo1" class="input-calculos" required></br>
+
+                    <p><label for="campo2">Insira seu peso:</label></p>
+                    <input type="number" id="campo2" class="input-calculos" required placeholder="ex:Se 84,5kg, coloque 84.5"></br>
+
+                    <p><label for="campo3">Insira sua altura:</label></p>
+                    <input type="number" id="campo3" class="input-calculos" required placeholder="Se 1,70m, coloque 1.70"></br>
+                </div>
+
+                <button type="submit" value="Enviar" class="botao">Calcular!</button>
+
+            </form>
+
+            <!--INICIO DO SCRIPT JAVA-->
+			<script>
+                function bemVindo(){
+                    alert("Através desta tela você conseguirá calcular seu IMC!");
+                }
+
+                function bemVindo2(){
+                    alert("Através desta tela você conseguirá calcular seu IMC!");
+                }
+
+                bemVindo();
+                let nome = document.querySelector("#campo1");
+                let peso = document.querySelector("#campo2");
+                let altura = document.querySelector("#campo3");
+                var valores = false;
+
+                //função de calculo do IMC. para usar basta digitar "calculoIMC("var peso, var altura")"
+                function calculoIMC (){
+                    var imc = peso.value / (altura.value * altura.value);
+                    return imc;
+                }
+
+                function alertaResultados(){
+                    alert(nome.value + ", segue o valor de suas medidas, junto do valor final do seu IMC! Seu peso atual é de " + peso.value +"Kg. Sua altura atual é de " + altura.value +" metros.");
+                    //alert("Seu peso atual é de " + peso.value +"Kg.");
+                    //alert("Sua altura atual é de " + altura.value +" metros.");
+                }
+
+                //função que calcula o IMC e imprime o valor, junto do recomendado.
+                //Primeiramente vai imprimir o peso e altura em tela. Em seguida irá
+                //salvar em uma variavel o calculo do IMC para que seja possível salvar em tela.
+                //e por final é feito uma comparação se o usuário deve ou não ir no médico.
+                function resultadoIMC(nome, peso, altura){
+                    var valorIMC = calculoIMC (peso, altura);
+                    alertaResultados(nome, peso, altura);
+                    alert("O IMC atual é de " + valorIMC +".");
+                    console.log(valorIMC);
+                    if(valorIMC == NaN){
+                        alert("Por favor preencha os dados corretamente!");
+                        valores = true;
+                    }
+                    if(valorIMC <= 18.5 ){
+                        alert("Você está abaixo do aceitável. É Recomendado que procure um médico!");
+                    } if (valorIMC > 18.5 && valorIMC <=35){
+                        alert("Você possui o IMC dentro da média. Mantenha seus hábitos!");
+                    } if (valorIMC > 35){
+                        alert("Você está acima do aceitável. É Recomendado que procure um médico!");
+                    }
+                }
+
+                //botao que chama a funçao de calculo e resultado
+                let button = document.querySelector("button");
+                button.onclick = resultadoIMC;
+
+			</script>
+            <!--FIM DO SCRIPT-->
+
+			<main>
+			</main>
+			<footer>
+			</footer>
+		</body>
+	</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <meta charset="UTF-8">
+		<head>
+			<link rel="stylesheet" href="reset.css">
+			<link rel="stylesheet" href="cabecalho.css">
+			<link rel="stylesheet" href="formulario.css">
+			<title>Contatos</title>
+		</head>
+		<body>
+			<!--inicio do cabeçalho-->
+			<header>
+                <div class="caixa">
+                    <h1>- Calculo de IMC -</h1>
+                    <div class="opcoes">
+                        <nav>
+                            <ul>
+                                <li><a href="home.html">Home</a></li>
+                                <li><a href="icm.html">Calcule seu IMC</a></li>
+                                <li><a href="contato.html">Contato</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+			<!--fim do cabeçalho-->
+            <script>
+                alert("Por favor, preencha seus dados de contato.");
+			</script>
+			<main>
+				<!--form é a tag para o formulario-->
+				<form>
+					<label for="form_nome">Nome Completo</label>
+					<input type="text" id="form_nome" class="input-padrao" required>
+
+					<label for="form_email">E-mail</label>
+					<input type="email" id="form_email" class="input-padrao" required placeholder="seumail@dominio.com">
+
+					<label for="form_telefone">Telefone p/ contato</label>
+					<input type="tel" id="form_telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+
+					<fieldset>
+						<legend>Como podemos contatar você?</legend>
+						<label for="marca_email">
+							<input type="checkbox" name="contato" value="email" id="marca_email" class="input-checkbox" checked>
+							E-mail
+							</label>	
+
+						<label for="marca_telefone">
+							<input type="checkbox" name="contato" value="telefone" id="marca_telefone" class="input-checkbox" checked>
+							Telefone
+							</label>
+						
+						<label for="marca_whatsapp">
+							<input type="checkbox" name="contato" value="whatsapp" id="marca_whatsapp" class="input-checkbox" checked>
+							Whatsapp
+						</label>
+
+						<fieldset>
+							<legend>Como você ficou sabendo de nosso site?</legend>
+							<select>
+								<option>Facebook</option>
+								<option>Instagram</option>
+								<option>LinkedIn</option>
+								<option>Twitter</option>
+								<option>YouTube</option>
+								<option>Outros</option>
+							</select>
+						</fieldset>
+
+						<label for="check-notificacao">
+							<input type="checkbox" name="confirma-notificacao" value="confirma" id="check-notificacao" class="checkbox-margin" checked>
+							Desejo receber noticias e dicas por e-mail
+						</label>
+					</fieldset>
+
+					
+
+					<!--input type="submit" value="Enviar"-->
+					<input type="submit" value="Enviar" class="botao">
+				</form>
+				<!--fim do formulario-->
+			</main>
+			<footer>
+			</footer>
+		</body>
+	</html>

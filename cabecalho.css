@@ -1,0 +1,38 @@
+header{
+    background-color: rgb(69, 212, 69);
+    padding: 10px 0;
+}
+
+header h1{
+    font-size: 40px;
+}
+
+.caixa{
+    position: relative;
+    width: 1340px;
+    margin: 0 auto;
+}
+
+.opcoes{
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
+
+.opcoes li{
+    display: inline;
+    margin-left: 15px;
+}
+
+.opcoes a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;    
+}
+
+.opcoes a:hover{
+    transition: 1s all;
+    color: #f8f8f8;
+}

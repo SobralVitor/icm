@@ -1,0 +1,53 @@
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label{
+    display:block;
+    font-size: 15px;
+    margin: 0 0 5px;
+}
+
+fieldset{
+    margin: 20px 0 5px;
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 5px 5px;
+    width: 30%;
+}
+
+.input-checkbox{
+    margin: 5px 2px 0px 2px;
+    padding: 5px 5px;
+}
+
+.checkbox-margin{
+    margin: 20px 2px 10px 2px;
+}
+
+.botao{
+    width: 40%;
+    padding: 15px 0;
+    background-color: rgb(69, 212, 69);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.botao:hover{
+    background-color: greenyellow;
+    transition: 1s all;
+    transform: scale(1.1);
+}
