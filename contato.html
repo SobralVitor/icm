@@ -25,7 +25,7 @@
             </header>
 			<!--fim do cabeçalho-->
             <script>
-                alert("Por favor, preencha seus dados de contato.");
+                //alert("Por favor, preencha seus dados de contato.");
 			</script>
 			<main>
 				<!--form é a tag para o formulario-->
@@ -38,6 +38,9 @@
 
 					<label for="form_telefone">Telefone p/ contato</label>
 					<input type="tel" id="form_telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+
+					<label for="form_mensagem">Mensagem(opcional)</label>
+					<textarea cols="40" rows="5" id="form_mensagem" class="input-mensagem" placeholder="Deixe aqui um recado caso necessário"></textarea>
 
 					<fieldset>
 						<legend>Como podemos contatar você?</legend>
@@ -72,9 +75,7 @@
 							<input type="checkbox" name="confirma-notificacao" value="confirma" id="check-notificacao" class="checkbox-margin" checked>
 							Desejo receber noticias e dicas por e-mail
 						</label>
-					</fieldset>
-
-					
+					</fieldset>	
 
 					<!--input type="submit" value="Enviar"-->
 					<input type="submit" value="Enviar" class="botao">

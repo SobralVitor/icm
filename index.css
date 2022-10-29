@@ -11,5 +11,10 @@ thead{
 
 th, td{
     border: 1px solid black;
-    padding: 5px 5px;
+    padding: 8px 34px;
+    text-align: center;
+}
+
+th, td:hover{
+    transform: scale(1.1);
 }
